@@ -6,7 +6,7 @@ console.warn(
 
 // this setting controls if ads are shown,
 // more info on the README.md file
-var adStatus = localStorage.getItem("adConsent") === "true"; // default: true
+var adStatus = localStorage.getItem("adConsent") === "false"; // default: true
 
 if (!adStatus) {
   (function () {
