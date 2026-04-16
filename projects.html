@@ -12,84 +12,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.ico" />
     <link rel="shortcut-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/css/theme.css" />
     <script src="/js/main.js"></script>
-    <style>
-      p {
-        text-align: center;
-        max-width: 600px;
-        margin: 20px auto;
-      }
-      button {
-        cursor: pointer;
-        background-color: #22c55e;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 20px;
-        margin-top: 20px;
-      }
-      .game-link {
-        height: 400px;
-        width: 300px;
-        text-decoration: none;
-      }
-      .game-tile {
-        background-color: #949494;
-        height: 400px;
-        width: 300px;
-        border-radius: 30px;
-      }
-      .game-icon {
-        border-radius: 30px;
-        width: 300px;
-        height: 300px;
-      }
-      .game-title {
-        font-size: 30px;
-        font-weight: bold;
-        color: #000000;
-        text-align: center;
-        margin: auto;
-      }
-      .flex-container {
-        display: flex;
-        flex-direction: row;
-        order: 0;
-        flex-grow: 0;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-      }
-      .container {
-        padding: 10px;
-      }
-      @keyframes spin {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-    </style>
   </head>
-  <body style="background-color: #121212; color: #ffffff; font-family: sans-serif; text-decoration: none; text-align: center;">
-    <h1 style="font-size: 3em; text-align: center;">Projects</h1>
-    <input type="text" id="search" onkeyup="searchGames()" placeholder="Search for games..." style="width: 100%; font-size: 18px; padding: 6px 20px; margin: auto; border-radius: 30px; max-width: 600px; margin-bottom: 10px;" />
-    <div id="loader" style="display: block; border: 16px solid #f3f3f3; border-top: 16px solid #3498db; border-radius: 50%; width: 120px; height: 120px; animation: spin 0.3s linear infinite; margin: auto; margin-top: 1rem;"></div>
-    <div id="game-container" class="flex-container"></div>
-    <p class="text-center">
-      <a href="/index.html" style="text-decoration: none;">
-        <button style="cursor: pointer; background-color: #b625cc; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 20px; margin-top: 5px;">
-          Go to the homepage
-        </button>
+  <body>
+
+    <header class="site-header">
+      <a href="/" class="brand">
+        <span class="brand-name">3kh0 lite</span>
       </a>
-    </p>
-    <button id="back-to-top" style="display: none; position: fixed; bottom: 20px; right: 20px;">Back to top</button>
+      <nav class="site-nav">
+        <a href="/projects.html" class="nav-link" style="color:var(--gold-light); border-color:var(--border);">Games</a>
+        <a href="/misc.html" class="nav-link">Tools</a>
+      </nav>
+    </header>
+
+    <div class="page-wrap">
+      <h1 class="page-title">The Game Hall</h1>
+      <p class="page-subtitle">Browse the archives and choose your pursuit</p>
+
+      <div class="ornament">⚜</div>
+
+      <div class="search-wrap">
+        <input type="text" id="search" onkeyup="searchGames()" placeholder="Search the archives..." />
+      </div>
+
+      <div id="loader"></div>
+      <div id="game-container" class="flex-container"></div>
+
+      <div style="text-align:center; margin-top:3rem;">
+        <a href="/index.html" class="btn btn-secondary">Return to Keep</a>
+      </div>
+    </div>
+
+    <button id="back-to-top" class="btn btn-primary" style="display:none;">&#8593; Top</button>
+
     <script>
       let games = [];
       fetch("config/games.json")

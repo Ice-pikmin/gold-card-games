@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <title>404 Error | Gold Card</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <title>404 — Page Not Found | 3kh0</title>
+    <link rel="stylesheet" href="/css/theme.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        min-height: 100vh;
+      }
+
+      .error-wrap {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 1.5rem;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <h1>404 Error</h1>
-    <p>The page you requested has been moved, deleted, or never existed. Please fix it.</p>
-    <a href="/">Go to Homepage</a>
+
+    <header class="site-header">
+      <a href="/" class="brand">
+        <span class="brand-name">3kh0 lite</span>
+      </a>
+      <nav class="site-nav">
+        <a href="/projects.html" class="nav-link">Games</a>
+        <a href="/misc.html" class="nav-link">Tools</a>
+      </nav>
+    </header>
+
+    <div class="error-wrap">
+      <p class="error-code">404</p>
+      <div class="ornament" style="max-width:340px;">⚜</div>
+      <p class="error-msg">
+        The page you seek has been lost to the ages —<br />
+        moved, deleted, or never inscribed.
+      </p>
+      <a href="/" class="btn btn-primary">Return to Keep</a>
+    </div>
+
+    <footer class="site-footer">
+      &copy; 3kh0, 2024. All rights reserved.
+    </footer>
+
   </body>
 </html>
