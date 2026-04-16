@@ -197,16 +197,15 @@ input::placeholder { color: var(--cream-dim); opacity: 0.6; }
 
 /* ── CARD (game tile) ──────────────────────────────── */
 .game-link {
-  height: 400px;
-  width: 260px;
+  width: 100%;
   text-decoration: none;
+  display: block;
 }
 
 .game-tile {
   background: linear-gradient(180deg, #251508 0%, #1A0E06 100%);
   border: 1px solid var(--border);
-  height: 400px;
-  width: 260px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,8 +228,8 @@ input::placeholder { color: var(--cream-dim); opacity: 0.6; }
 }
 
 .game-icon {
-  width: 260px;
-  height: 260px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
 }
