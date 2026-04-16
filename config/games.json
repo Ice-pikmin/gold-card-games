@@ -660,6 +660,11 @@
     "title": "This Is The Only Level"
   },
   {
+    "link": "projects/timeshooter3swat/index.html",
+    "imgSrc": "projects/timeshooter3swat/logo.png",
+    "title": "Time Shooter 3 SWAT"
+  },
+  {
     "link": "projects/tosstheturtle/index.html",
     "imgSrc": "projects/tosstheturtle/tosstheturtle.png",
     "title": "Toss The Turtle"
@@ -728,5 +733,10 @@
     "link": "projects/you-are-bezos/index.html",
     "imgSrc": "projects/you-are-bezos/img/banner.png",
     "title": "You Are Jeff Bezos"
+  },
+  {
+    "link": "projects/minecraft-18/index.html",
+    "imgSrc": "projects/minecraft-18/favicon.png",
+    "title": "Minecraft 1.8"
   }
 ]
