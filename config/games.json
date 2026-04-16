@@ -230,6 +230,11 @@
     "title": "Duck Life 3"
   },
   {
+    "link": "projects/eaglerjp/index.html",
+    "imgSrc": "projects/eaglerjp/favicon.ico",
+    "title": "Eagler JP"
+  },
+  {
     "link": "projects/edgenotfound/index.html",
     "imgSrc": "projects/edgenotfound/edge.png",
     "title": "Edge Not Found"
